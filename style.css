@@ -1,0 +1,66 @@
+:root {
+  --clr-rood: rgb(217,82,57);
+  --clr-grijs:rgb(64,64,64);
+  --fw-header: bold;
+}
+
+body{
+  font-family: 'Calibri';
+  margin: 0;
+  padding: 0;
+  color: var(--clr-grijs);
+}
+
+h1 {
+  color: var(--clr-grijs);
+  font-weight: var(--fw-header);
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+}
+span {
+  color: var(--clr-rood);
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+}
+
+.persoon {
+  padding: 50px;
+}
+
+.mail {
+  padding: 50px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  background-color: var(--clr-rood);
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+}
+
+li a:hover:not(.active) {
+  text-decoration: underline white;
+}
+
+li .active{
+  text-decoration: underline white;
+}
