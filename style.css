@@ -18,28 +18,16 @@ h1 {
   text-align: center;
   padding-top: 20px;
 }
+
 span {
   color: var(--clr-rood);
-}
-
-.contact {
-  display: flex;
-  justify-content: center;
-}
-
-.persoon {
-  padding: 50px;
-}
-
-.mail {
-  padding: 50px;
 }
 
 ul {
   list-style-type: none;
   margin: 0;
-  overflow: hidden;
   background-color: var(--clr-rood);
+  text-align: center;
 }
 
 li {
@@ -54,7 +42,6 @@ li a {
   padding-bottom: 20px;
   text-decoration: none;
   font-weight: bold;
-  font-size: large;
 }
 
 li a:hover:not(.active) {
@@ -64,3 +51,4 @@ li a:hover:not(.active) {
 li .active{
   text-decoration: underline white;
 }
+
