@@ -6,6 +6,7 @@
 
 :root {
   --clr-rood: rgb(217,82,57);
+  --clr-rood-hover: rgb(170, 63, 44);
   --clr-grijs:rgb(64,64,64);
   --fw-header: bold;
 }
@@ -17,6 +18,15 @@ body{
   color: var(--clr-grijs);
 }
 
+span {
+  color: var(--clr-rood);
+}
+
+.span-cv, .span-erv{
+  font-weight: bold;
+  font-size: larger;
+}
+
 h1 {
   color: var(--clr-grijs);
   font-weight: var(--fw-header);
@@ -25,9 +35,6 @@ h1 {
   padding-top: 25px;
 }
 
-span {
-  color: var(--clr-rood);
-}
 
 ul {
   list-style-type: none;
@@ -55,12 +62,11 @@ li a:hover, li .active{
   text-decoration: underline white;
 }
 
-
 .cv-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 75vh;
+  height: 400px;
 }
 
 .cv-tekst {
@@ -77,9 +83,8 @@ li a:hover, li .active{
   padding-top: 40px;
 }
 
-
 .cv-onder, .cv-boven{
-  font-size: 1.175rem;
+  font-size: 1.2rem;
 }
 
 .cartoon-diploma {
@@ -89,9 +94,105 @@ li a:hover, li .active{
   z-index: 1;
 }
 
-.span-cv {
-  font-weight: bold;
+.contactformulier {
+  width: 500px;
+  max-width: 97%;
+  margin: 2rem auto;
+  border: none;
+  padding: 2rem;
+  z-index: 2;
+  box-shadow: rgb(0 0 0 / 5%) 0px 0px 20px 0px ;
 }
+
+label {
+  display: block;
+  padding: 1rem 0 0.5rem;
+  color: var(--clr-rood);
+  font-weight: bold;
+  font-size: 1.175rem;
+}
+
+input {
+  display: block;
+  width: 100%;
+  border: none;
+  padding-bottom: 5px;
+  border-bottom: solid 2px var(--clr-rood);
+}
+
+textarea {
+  width: 100%;
+  height: 75px;
+  border: none;
+  border-bottom: solid var(--clr-rood);
+}
+
+::placeholder {
+  color:var(--clr-grijs);
+  opacity: 0.4
+}
+
+#vrzdknop {
+  border: 0;
+  background-color: var(--clr-rood);
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  margin-top: 1rem;
+  width: auto;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+#vrzdknop:hover {
+  background-color: var(--clr-rood-hover);
+  cursor: pointer;
+}
+
+.gegevens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.naam-mail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.erv-container {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  
+}
+.ervaring {
+width: 500px;
+padding: 20px;
+}
+
+.erv-p, .erv-p-lijn{
+  padding: 25px;
+  position: relative;
+  font-size: 1.2rem;
+}
+
+.erv-p-lijn::after {
+  content: "";
+  position: absolute;
+  background-color:var(--clr-rood);
+  height: 43px;
+  width: 7px;
+  left: 50%;
+  right: 50%;
+  top: 80%;
+  box-shadow: rgb(0 0 0 /15%)  5px  0px  10px 5px;
+  border-radius: 5px;
+}
+
+
 
 
 

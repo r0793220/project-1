@@ -19,31 +19,33 @@
   </ul>
 
   <h1>Contact<span>.</span></h1> 
-  <div class="contact">
-    <div class="persoon"><img src="/images/persoon.jpg" alt="cartoon persoon">
-  <p>Tim Wuyts</p></div>
-    <div class="mail"><img src="/images/e-mail.jpg" alt="tekening brief">
-  <p>r0793220@student.thomasmore.be</p></div>
-  </div>
+ 
 
-  <div class="container">
-    <form action="action_page.php">
-  
-      <label for="naam">Naam</label>
-      <input type="text" id="naam" name="naam" placeholder="Uw naam..">
-  
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" placeholder="Uw mailadres..">
+      <form class="contactformulier" action="action_page.php">
 
-      <label for="naam">Onderwerp</label>
-      <input type="onderwerp" id="oderwerp" name="onderwerp" placeholder="Onderwerp..">
+        <div class="naam-mail">
+          <div class="item">
+            <label for="naam">Naam</label>
+          <input type="text" id="naam" name="naam" placeholder="Uw naam..">
+          </div>
+          <div class="item">
+            <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="Uw mailadres..">
+          </div>
+        </div>
+        <div class="item">
+          <label for="onderwerp">Onderwerp</label>
+          <input type="onderwerp" id="oderwerp" name="onderwerp" placeholder="Onderwerp..">
+        </div>
+        <div class="item">
+          <label for="vraag">Vraag</label>
+          <textarea id="vraag" name="vraag" placeholder="Uw Vraag.."></textarea>  
+        </div>
 
-      <label for="vraag">Vraag</label>
-      <textarea id="vraag" name="vraag" placeholder="Uw Vraag.." style="height:200px"></textarea>
-      
-      <input type="submit" value="verzenden">
+        <input type="submit" value="verzenden" id="vrzdknop">
+    
+      </form>
+    
   
-    </form>
-  </div>
 </body>
 </html>
